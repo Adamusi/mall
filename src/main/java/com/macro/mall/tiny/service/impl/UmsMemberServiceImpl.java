@@ -25,7 +25,6 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
     @Override
     public CommonResult generateAuthCode(String telephone) {
-        // 产生随机6位验证码
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
         for (int i = 0; i < 6; i++) {
